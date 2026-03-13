@@ -6,6 +6,7 @@ import os
 BOT_TOKEN = "8210976690:AAE-y04U5qku2xAaxV0WRi1tGf2ulIRyeXA"
 CHAT_LINK = "https://t.me/+XNABfe6x8WY5ZGVi"
 RULES_LINK = "https://t.me/+DKRrLd8xkiFmMGRi"
+SOCIALS_LINK = "https://t.me/+ndgtra7-a0tiZDUy"  # Все соц сети
 PHOTO_PATH = "mill.jpg"
 CAPTION_TEXT = "Заходите в мой чатик 💝"
 # ===================================================
@@ -25,12 +26,12 @@ async def handle_forwarded_post(update: Update, context: ContextTypes.DEFAULT_TY
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("💬 Чат", url=CHAT_LINK),
-            InlineKeyboardButton("📋 Правила", url=RULES_LINK)
+            InlineKeyboardButton("📋 Правила", url=RULES_LINK),
+            InlineKeyboardButton("🌐 Ссылки", url=SOCIALS_LINK)
         ]
     ])
     
     try:
-        # Отвечаем фоткой с текстом и кнопками
         with open(PHOTO_PATH, 'rb') as photo:
             await message.reply_photo(
                 photo=photo,
