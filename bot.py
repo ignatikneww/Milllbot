@@ -5,7 +5,7 @@ import asyncio
 
 # ==================== НАСТРОЙКИ ====================
 BOT_TOKEN = "8210976690:AAE-y04U5qku2xAaxV0WRi1tGf2ulIRyeXA"
-CHAT_LINK = "https://t.me/+XNABfe8x8WY5ZGVi"
+CHAT_LINK = "https://t.me/+tenQwnrH4XEwNTRi"
 RULES_LINK = "https://t.me/+DKRrLd8xkiFmMGRi"
 SOCIALS_LINK = "https://t.me/+ndgtra7-a0tiZDUy"
 PHOTO_PATH = "mill.jpg"
